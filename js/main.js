@@ -6,7 +6,7 @@
 // Wait for DOM to be ready
 document.addEventListener('DOMContentLoaded', function() {
     
-    // Smooth scrolling for anchor links
+    // Smooth scrolling for anchor links with offset
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
