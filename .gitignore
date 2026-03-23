@@ -1,0 +1,26 @@
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
+# Old files (the original downloaded versions)
+The 1% Better Program _ Build Your AI Clone That Does Marketing For You.html
+The 1% Better Program _ Build Your AI Clone That Does Marketing For You_files/
+
+# Node modules (if you add npm later)
+node_modules/
+
+# Build outputs
+dist/
+build/
