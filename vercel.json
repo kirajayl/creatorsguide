@@ -3,7 +3,6 @@
   "outputDirectory": ".",
   "devCommand": null,
   "installCommand": null,
-  "framework": "static",
   "cleanUrls": true,
   "trailingSlash": false,
   "headers": [
