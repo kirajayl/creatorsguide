@@ -137,8 +137,10 @@ header.sticky {
     position: sticky;
     top: 0;
     z-index: 50;
-    height: auto;
-    max-height: 80px;
+    height: 70px !important;
+    max-height: 70px !important;
+    min-height: auto !important;
+    overflow: hidden;
 }
 
 header > div {
@@ -146,17 +148,33 @@ header > div {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    height: auto;
-    min-height: 64px;
+    height: 70px !important;
+    max-height: 70px !important;
+    display: flex;
+    align-items: center;
 }
 
 header .container-pad {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    height: auto;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    height: 70px !important;
+    max-height: 70px !important;
+}
+
+/* Force header elements to be compact */
+header img {
+    height: 40px !important;
+    width: 40px !important;
+    min-height: auto;
+    max-height: none;
+}
+
+header .text-sm,
+header .text-xs {
+    line-height: 1.2;
 }
 
 /* Navigation */
