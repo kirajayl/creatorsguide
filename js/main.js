@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
     faqButtons.forEach(button => {
         button.addEventListener('click', function() {
             const card = this.closest('.card');
-            const answer = card.querySelector('div:last-child');
+            const answer = card.querySelector('div.px-5');
             const symbol = this.querySelector('span:last-child');
             
             // Toggle active state
