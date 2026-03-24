@@ -377,6 +377,331 @@ section .relative.rounded-2xl .font-bold {
     }
 }
 
+/* ========================================
+   Mobile Optimizations
+   ======================================== */
+
+/* Mobile-first base adjustments */
+@media (max-width: 767px) {
+    /* Typography scaling */
+    h1 { font-size: 2rem !important; line-height: 1.1 !important; }
+    h2 { font-size: 1.75rem !important; }
+    h3 { font-size: 1.5rem !important; }
+    
+    /* Hero section mobile layout */
+    section:first-of-type {
+        padding-top: 1.5rem !important;
+        padding-bottom: 3rem !important;
+    }
+    
+    /* Stack hero content vertically on mobile */
+    section:first-of-type > div > div > div[style*="grid-template-columns"] {
+        grid-template-columns: 1fr !important;
+        gap: 32px !important;
+    }
+    
+    /* Reorder: image first, then content */
+    section:first-of-type > div > div > div > div:first-child {
+        order: 1;
+        max-width: 100% !important;
+    }
+    
+    section:first-of-type > div > div > div > div:last-child {
+        order: 2;
+        text-align: center !important;
+    }
+    
+    /* Hero image sizing */
+    section:first-of-type img[alt*="AI Clone"] {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    
+    /* Hero badge positioning */
+    section:first-of-type > div > div > div > div:first-child > div > div[style*="absolute"] {
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+    
+    /* Hero text adjustments */
+    section:first-of-type h1[style*="font-size: 3.4rem"] {
+        font-size: 1.875rem !important; /* 30px */
+        letter-spacing: -0.01em !important;
+    }
+    
+    section:first-of-type p[style*="font-size: 18px"] {
+        font-size: 1rem !important; /* 16px */
+    }
+    
+    /* Center hero elements on mobile */
+    section:first-of-type > div > div > div > div:last-child > div[style*="flex-direction: column"] {
+        align-items: center !important;
+    }
+    
+    section:first-of-type > div > div > div > div:last-child > div[style*="flex-wrap"] {
+        justify-content: center !important;
+    }
+    
+    /* Button stacking on mobile */
+    section:first-of-type a[style*="border-radius: 9999px"] {
+        display: flex !important;
+        width: 100% !important;
+        justify-content: center !important;
+        padding: 12px 20px !important;
+        font-size: 13px !important;
+    }
+    
+    /* 4-card grid to single column on mobile */
+    section[style*="padding: 64px 0 96px"] > div > div[style*="grid-template-columns: repeat(4"] {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+    }
+    
+    /* Card text sizing */
+    section[style*="padding: 64px 0 96px"] p {
+        font-size: 12px !important;
+        line-height: 1.5 !important;
+    }
+    
+    /* Section padding reduction */
+    section {
+        padding: 2.5rem 0 !important;
+    }
+    
+    /* Container padding */
+    .container-pad {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    
+    /* Header mobile optimization */
+    header .container-pad {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    
+    header img {
+        height: 36px !important;
+        width: 36px !important;
+    }
+    
+    header .text-sm {
+        font-size: 13px !important;
+    }
+    
+    header .text-xs {
+        font-size: 11px !important;
+    }
+    
+    header .btn {
+        padding: 10px 16px !important;
+        font-size: 12px !important;
+    }
+    
+    /* Navigation mobile */
+    nav {
+        display: none !important; /* Keep hidden, could add hamburger menu later */
+    }
+    
+    /* Grid adjustments */
+    .grid-cols-2 {
+        grid-template-columns: 1fr !important;
+    }
+    
+    /* Card padding */
+    .card {
+        padding: 1.25rem !important;
+    }
+    
+    /* Button touch targets */
+    .btn {
+        min-height: 44px !important; /* Minimum touch target size */
+        padding: 12px 20px !important;
+    }
+    
+    /* Form elements */
+    input, textarea, select {
+        font-size: 16px !important; /* Prevent zoom on iOS */
+    }
+    
+    /* Spacing adjustments */
+    .mb-8 { margin-bottom: 1.5rem !important; }
+    .mb-10 { margin-bottom: 2rem !important; }
+    .mb-14 { margin-bottom: 2.5rem !important; }
+    .mb-16 { margin-bottom: 3rem !important; }
+    
+    .mt-8 { margin-top: 1.5rem !important; }
+    .mt-10 { margin-top: 2rem !important; }
+    .mt-12 { margin-top: 2.5rem !important; }
+    .mt-14 { margin-top: 3rem !important; }
+    
+    /* Gap adjustments */
+    .gap-6 { gap: 1rem !important; }
+    .gap-8 { gap: 1.5rem !important; }
+    .gap-10 { gap: 2rem !important; }
+}
+
+/* Tablet optimizations */
+@media (min-width: 768px) and (max-width: 1023px) {
+    h1 { font-size: 2.75rem !important; }
+    h2 { font-size: 2.25rem !important; }
+    
+    section:first-of-type h1[style*="font-size: 3.4rem"] {
+        font-size: 2.5rem !important;
+    }
+    
+    /* 4-card grid to 2 columns on tablet */
+    section[style*="padding: 64px 0 96px"] > div > div[style*="grid-template-columns: repeat(4"] {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    
+    /* Hero image max width */
+    section:first-of-type img[alt*="AI Clone"] {
+        max-width: 80% !important;
+    }
+}
+
+/* Touch-friendly improvements */
+@media (hover: none) and (pointer: coarse) {
+    /* Larger touch targets */
+    .btn {
+        min-height: 48px !important;
+        padding: 14px 24px !important;
+    }
+    
+    /* Remove hover effects on touch devices */
+    .card:hover {
+        transform: none !important;
+    }
+    
+    nav a:hover {
+        color: inherit !important;
+    }
+    
+    /* Increase link tap areas */
+    a {
+        min-height: 44px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+    }
+}
+
+/* Prevent horizontal scroll */
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+/* Ensure images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Fix inline styles on mobile */
+@media (max-width: 767px) {
+    [style*="font-size: 3.4rem"] {
+        font-size: 1.875rem !important;
+    }
+    [style*="font-size: 2.5rem"] {
+        font-size: 1.75rem !important;
+    }
+    [style*="font-size: 18px"] {
+        font-size: 1rem !important;
+    }
+    [style*="padding: 64px"] {
+        padding: 40px 20px !important;
+    }
+    [style*="gap: 64px"] {
+        gap: 32px !important;
+    }
+    [style*="padding: 80px"] {
+        padding: 40px !important;
+    }
+    [style*="grid-template-columns: repeat(4"] {
+        grid-template-columns: 1fr !important;
+    }
+    [style*="grid-template-columns: 1fr 1fr"] {
+        grid-template-columns: 1fr !important;
+    }
+    [style*="margin-bottom: 56px"] {
+        margin-bottom: 32px !important;
+    }
+    [style*="margin-top: 56px"] {
+        margin-top: 32px !important;
+    }
+    [style*="padding: 40px"] {
+        padding: 24px 16px !important;
+    }
+    [style*="height: 160px"] {
+        height: 120px !important;
+    }
+    [style*="font-size: 30px"] {
+        font-size: 24px !important;
+    }
+    [style*="aspect-ratio: 3 / 4"] {
+        aspect-ratio: 16 / 9 !important;
+    }
+}
+
+/* Tablet inline style fixes */
+@media (min-width: 768px) and (max-width: 1023px) {
+    [style*="font-size: 3.4rem"] {
+        font-size: 2.5rem !important;
+    }
+    [style*="font-size: 2.5rem"] {
+        font-size: 2rem !important;
+    }
+    [style*="grid-template-columns: repeat(4"] {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    [style*="padding: 64px"] {
+        padding: 48px 24px !important;
+    }
+}
+
+/* Ensure all sections respect mobile padding */
+section[style*="padding: 64px 0"] {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+@media (max-width: 767px) {
+    section[style*="padding: 64px 0"] {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
+}
+
+/* Fix value stack card padding on mobile */
+@media (max-width: 767px) {
+    [style*="padding: 40px"] {
+        padding: 24px 16px !important;
+    }
+    [style*="font-size: 30px"] {
+        font-size: 24px !important;
+    }
+    [style*="margin-top: 48px"] {
+        margin-top: 32px !important;
+    }
+}
+
+/* Arrow connectors hide on mobile */
+@media (max-width: 767px) {
+    [style*="position: absolute; top: 96px; right: -18px"] {
+        display: none !important;
+    }
+}
+
+/* Stack step cards vertically on mobile */
+@media (max-width: 767px) {
+    [style*="display: grid; grid-template-columns: repeat(4"] {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 24px !important;
+    }
+}
+
 /* Footer Styles */
 footer {
     margin-top: auto;
