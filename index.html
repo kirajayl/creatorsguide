@@ -161,48 +161,102 @@
         </section>
         
         <!-- What People Are Doing Section -->
-        <section class="py-16 sm:py-24 bg-white">
-            <div class="container-pad">
-                <div class="max-w-3xl mx-auto text-center mb-14">
-                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight" style="font-family: 'Playfair Display', serif">
-                        What people inside <span class="text-[#A0845C]">are doing</span>
-                    </h2>
-                </div>
-                <div class="grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-4 max-w-6xl mx-auto">
-                    <div class="relative rounded-2xl overflow-hidden group" style="aspect-ratio:3 / 4">
-                        <img src="images/create-ai-clone.jpeg" alt="Create your AI clone — no camera, no studio" class="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                        <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-5">
-                            <div class="font-bold text-white text-xs sm:text-sm uppercase tracking-wide">Create Your AI Clone</div>
-                            <p class="text-white/75 text-xs sm:text-sm mt-1 leading-relaxed">Build a professional AI version of yourself (or a brand new persona) in minutes. No camera, no studio.</p>
-                        </div>
-                    </div>
-                    <div class="relative rounded-2xl overflow-hidden group" style="aspect-ratio:3 / 4">
-                        <img src="images/create-content-minutes.jpeg" alt="Create content in minutes — woman showing 1% Better on phone" class="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                        <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-5">
-                            <div class="font-bold text-white text-xs sm:text-sm uppercase tracking-wide">Create Content in Minutes</div>
-                            <p class="text-white/75 text-xs sm:text-sm mt-1 leading-relaxed">Your clone creates reels, posts, and videos using our proven content formula. Hook → Value → CTA.</p>
-                        </div>
-                    </div>
-                    <div class="relative rounded-2xl overflow-hidden group" style="aspect-ratio:3 / 4">
-                        <img src="images/earn-affiliate.jpeg" alt="AI clone at café — Earn affiliate commission" class="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                        <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-5">
-                            <div class="font-bold text-white text-xs sm:text-sm uppercase tracking-wide">Earn Affiliate Commission</div>
-                            <p class="text-white/75 text-xs sm:text-sm mt-1 leading-relaxed">Let your AI clone promote products you love.</p>
-                        </div>
-                    </div>
-                    <div class="relative rounded-2xl overflow-hidden group" style="aspect-ratio:3 / 4">
-                        <img src="images/turn-content-income.jpeg" alt="Turn content into income — vibrant market scene" class="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                        <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-5">
-                            <div class="font-bold text-white text-xs sm:text-sm uppercase tracking-wide">Turn Content Into Income</div>
-                            <p class="text-white/75 text-xs sm:text-sm mt-1 leading-relaxed">Even with a small audience. That's how I started :)</p>
-                        </div>
-                    </div>
-                </div>
+        <section style="padding: 64px 0 96px; background: #ffffff;">
+          <div style="max-width: 1280px; margin: 0 auto; padding: 0 20px; font-family: Inter, sans-serif;">
+
+            <!-- Heading -->
+            <div style="max-width: 768px; margin: 0 auto; text-align: center; margin-bottom: 56px;">
+              <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 700; letter-spacing: -0.02em; color: #1a1a1a; margin: 0; line-height: 1.2;">
+                What people inside
+                <span style="color: #A0845C;"> are doing</span>
+              </h2>
             </div>
+
+            <!-- 4 Cards Grid -->
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; max-width: 1152px; margin: 0 auto;">
+
+              <!-- Card 1: Create Your AI Clone -->
+              <div style="position: relative; border-radius: 16px; overflow: hidden; aspect-ratio: 3 / 4;">
+                <img
+                  src="images/create-ai-clone.jpeg"
+                  alt="Create your AI clone — no camera, no studio"
+                  style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top; transition: transform 0.5s;"
+                />
+                <!-- Gradient overlay -->
+                <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.2) 50%, transparent);"></div>
+                <!-- Text -->
+                <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 20px;">
+                  <div style="font-weight: 700; color: #ffffff; font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em;">
+                    Create Your AI Clone
+                  </div>
+                  <p style="color: rgba(255,255,255,0.75); font-size: 13px; margin-top: 4px; line-height: 1.6;">
+                    Build a professional AI version of yourself (or a brand new persona) in minutes. No camera, no studio.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Card 2: Create Content in Minutes -->
+              <div style="position: relative; border-radius: 16px; overflow: hidden; aspect-ratio: 3 / 4;">
+                <img
+                  src="images/create-content-minutes.jpeg"
+                  alt="Create content in minutes — woman showing 1% Better on phone"
+                  style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top; transition: transform 0.5s;"
+                />
+                <!-- Gradient overlay -->
+                <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.2) 50%, transparent);"></div>
+                <!-- Text -->
+                <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 20px;">
+                  <div style="font-weight: 700; color: #ffffff; font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em;">
+                    Create Content in Minutes
+                  </div>
+                  <p style="color: rgba(255,255,255,0.75); font-size: 13px; margin-top: 4px; line-height: 1.6;">
+                    Your clone creates reels, posts, and videos using our proven content formula. Hook → Value → CTA.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Card 3: Earn Affiliate Commission -->
+              <div style="position: relative; border-radius: 16px; overflow: hidden; aspect-ratio: 3 / 4;">
+                <img
+                  src="images/earn-affiliate.jpeg"
+                  alt="AI clone at café — Earn affiliate commission"
+                  style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top; transition: transform 0.5s;"
+                />
+                <!-- Gradient overlay -->
+                <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.2) 50%, transparent);"></div>
+                <!-- Text -->
+                <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 20px;">
+                  <div style="font-weight: 700; color: #ffffff; font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em;">
+                    Earn Affiliate Commission
+                  </div>
+                  <p style="color: rgba(255,255,255,0.75); font-size: 13px; margin-top: 4px; line-height: 1.6;">
+                    Let your AI clone promote products you love.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Card 4: Turn Content Into Income -->
+              <div style="position: relative; border-radius: 16px; overflow: hidden; aspect-ratio: 3 / 4;">
+                <img
+                  src="images/turn-content-income.jpeg"
+                  alt="Turn content into income — vibrant market scene"
+                  style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top; transition: transform 0.5s;"
+                />
+                <!-- Gradient overlay -->
+                <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.2) 50%, transparent);"></div>
+                <!-- Text -->
+                <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 20px;">
+                  <div style="font-weight: 700; color: #ffffff; font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em;">
+                    Turn Content Into Income
+                  </div>
+                  <p style="color: rgba(255,255,255,0.75); font-size: 13px; margin-top: 4px; line-height: 1.6;">
+                    Even with a small audience. That's how I started :)
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </section>
         
         <!-- How It Works Section -->
