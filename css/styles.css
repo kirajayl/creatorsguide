@@ -75,6 +75,15 @@ a {
     }
 }
 
+/* Header Container Specific */
+header .container-pad {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
 /* Cards */
 .card {
     background: var(--card);
@@ -140,8 +149,9 @@ header.sticky {
 }
 
 header .bg-backdrop {
-    background: rgba(245, 240, 235, 0.8);
+    background: rgba(245, 240, 235, 0.95);
     backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
