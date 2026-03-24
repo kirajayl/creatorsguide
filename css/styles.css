@@ -270,6 +270,15 @@ section:first-of-type .h-6.w-6 {
     flex-shrink: 0;
 }
 
+/* Card overlay text - white for readability */
+section .relative.rounded-2xl p {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+section .relative.rounded-2xl .font-bold {
+    color: #fff !important;
+}
+
 /* Grids */
 .grid {
     display: grid;
