@@ -118,7 +118,7 @@ a {
 /* Cards */
 .card {
     background: var(--card);
-    border: 1.5px solid #1a1a1a;
+    border: 1px solid rgba(0, 0, 0, 0.06);
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
     border-radius: 20px;
     transition: all 0.15s ease;
