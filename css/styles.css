@@ -22,15 +22,20 @@
     color: inherit;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    transition: max-height 0.4s ease-out, padding 0.4s ease-out;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
     padding-bottom: 0;
 }
 
 .card.active .faq-answer {
-    max-height: 300px;
+    max-height: 350px;
     padding-bottom: 1.25rem;
+}
+
+/* FAQ Card Sizing */
+#faq .card {
+    min-height: 60px;
 }
 
 /* FAQ Button Reset */
