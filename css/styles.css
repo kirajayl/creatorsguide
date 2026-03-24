@@ -235,6 +235,13 @@ section:first-of-type .text-center p {
     margin-right: auto;
 }
 
+/* Subheader paragraph - smaller font */
+section:first-of-type .text-center p:first-of-type {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
 section:first-of-type .text-center h1 {
     text-align: center !important;
 }
