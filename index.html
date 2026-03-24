@@ -62,70 +62,102 @@
     <!-- Main Content -->
     <main>
         <!-- Hero Section -->
-        <section class="relative overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-b from-[#F5F0EB] via-[#EDE7E0] to-[#F5F0EB]"></div>
-            <div class="relative container-pad pt-16 pb-20 sm:pt-24 sm:pb-28">
-                <div class="max-w-6xl mx-auto">
-                    <!-- Badge moved to top -->
-                    <div class="flex justify-center lg:justify-start mb-8">
-                        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#A0845C]/5 border border-[#A0845C]/15 text-[#8A6F48] text-sm font-medium">
-                            <span>✨</span>AI-Powered • No Filming • No Showing Your Face
-                        </div>
-                    </div>
-                    
-                    <div class="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
-                        <!-- Left Side - Image -->
-                        <div class="w-full lg:w-5/12 flex justify-center lg:justify-start">
-                            <div class="relative w-full max-w-md">
-                                <div class="rounded-3xl overflow-hidden shadow-soft">
-                                    <img src="images/hero-ai-clone.jpeg" alt="AI Clone — Your digital marketing assistant" class="w-full h-auto object-cover">
-                                </div>
-                                <div class="absolute -bottom-3 left-1/2 -translate-x-1/2 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white shadow-lg border border-black/5 text-xs font-bold text-[#8A6F48]">
-                                    🤖 Your AI Clone
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Right Side - Content -->
-                        <div class="w-full lg:w-7/12">
-                            <h1 class="text-4xl sm:text-5xl lg:text-[3.4rem] font-bold tracking-tight text-[#1a1a1a] leading-[1.1]" style="font-family: 'Playfair Display', serif">
-                                Build your own AI clone<br>
-                                <span class="text-[#A0845C]">that does marketing for you.</span>
-                            </h1>
-                            
-                            <p class="mt-6 text-lg text-[#5a5a5a] leading-relaxed">
-                                I co-created an AI powered system to build digital income streams. Now I need <span class="text-[#1a1a1a] font-bold">100</span> women to test it, follow the plan, and become living proof that it works.
-                            </p>
-                            
-                            <p class="mt-4 text-[#5a5a5a] leading-relaxed">
-                                Your AI clone shows up every day, creates content, builds trust, and sells digital products — without you filming or showing your face.
-                            </p>
-                            
-                            <div class="mt-8 space-y-3">
-                                <div class="flex items-center gap-3">
-                                    <span class="h-6 w-6 rounded-full bg-[#A0845C]/15 text-[#A0845C] flex items-center justify-center text-sm">✓</span>
-                                    <span class="text-sm font-medium">No editing skills needed</span>
-                                </div>
-                                <div class="flex items-center gap-3">
-                                    <span class="h-6 w-6 rounded-full bg-[#A0845C]/15 text-[#A0845C] flex items-center justify-center text-sm">✓</span>
-                                    <span class="text-sm font-medium">Works with zero followers</span>
-                                </div>
-                                <div class="flex items-center gap-3">
-                                    <span class="h-6 w-6 rounded-full bg-[#A0845C]/15 text-[#A0845C] flex items-center justify-center text-sm">✓</span>
-                                    <span class="text-sm font-medium">Start earning this week</span>
-                                </div>
-                            </div>
-                            
-                            <div class="mt-10 flex flex-col sm:flex-row gap-4">
-                                <a class="btn btn-primary" href="https://nas.io/theonepercentbetterprogram/digital-files/the-1-better-program" target="_blank" rel="noreferrer">Get the system — $9.90</a>
-                                <a href="https://nas.io/theonepercentbetterprogram/sessions/ai-consultation" target="_blank" rel="noreferrer" class="btn btn-secondary">Book a free chat first</a>
-                            </div>
-                            
-                            <p class="mt-5 text-sm text-[#5a5a5a]">Join 100 pioneers building AI-powered income streams together.</p>
-                        </div>
-                    </div>
+        <!-- Hero Section -->
+        <section style="position: relative; overflow: hidden;">
+          <!-- Background -->
+          <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, #F5F0EB, #EDE7E0, #F5F0EB);"></div>
+
+          <div style="position: relative; max-width: 1280px; margin: 0 auto; padding: 64px 20px 80px; font-family: Inter, sans-serif;">
+            <div style="max-width: 1024px; margin: 0 auto;">
+
+              <!-- Top Badge -->
+              <div style="display: flex; justify-content: center; margin-bottom: 32px;">
+                <div style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; border-radius: 9999px; background: rgba(160,132,92,0.1); border: 1px solid rgba(160,132,92,0.2); color: #8A6F48; font-size: 14px; font-weight: 500;">
+                  <span>✨</span>
+                  AI-Powered • No Filming • No Showing Your Face
                 </div>
+              </div>
+
+              <!-- Main Hero Layout -->
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;">
+
+                <!-- Left — Image -->
+                <div style="display: flex; justify-content: center;">
+                  <div style="position: relative; width: 100%; max-width: 384px;">
+                    <div style="border-radius: 24px; overflow: hidden; box-shadow: 0 18px 40px rgba(42,36,30,0.10);">
+                      <img
+                        src="images/hero-ai-clone.jpeg"
+                        alt="AI Clone — Your digital marketing assistant"
+                        style="width: 100%; height: auto; object-fit: cover; display: block;"
+                      />
+                    </div>
+                    <!-- Floating badge -->
+                    <div style="position: absolute; bottom: -12px; left: 50%; transform: translateX(-50%); display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; border-radius: 9999px; background: #fff; box-shadow: 0 4px 16px rgba(0,0,0,0.1); border: 1px solid rgba(0,0,0,0.05); font-size: 12px; font-weight: 700; color: #8A6F48; white-space: nowrap;">
+                      🤖 Your AI Clone
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Right — Headline + CTAs -->
+                <div style="text-align: left;">
+                  <h1 style="font-family: 'Playfair Display', serif; font-size: 3.4rem; font-weight: 700; letter-spacing: -0.02em; color: #1a1a1a; line-height: 1.1; margin: 0;">
+                    Build your own AI clone<br />
+                    <span style="color: #A0845C;">that does marketing for you.</span>
+                  </h1>
+
+                  <p style="margin-top: 24px; font-size: 18px; color: #5a5a5a; line-height: 1.7;">
+                    I co-created an AI powered system to build digital income streams. Now I need
+                    <span style="color: #1a1a1a; font-weight: 700;">100</span> women to test it, follow the plan, and become living proof that it works.
+                  </p>
+
+                  <p style="margin-top: 16px; color: #5a5a5a; line-height: 1.7;">
+                    Your AI clone shows up every day, creates content, builds trust, and sells digital products — without you filming or showing your face.
+                  </p>
+
+                  <!-- Quick Checks -->
+                  <div style="margin-top: 32px; display: flex; flex-direction: column; gap: 12px;">
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                      <span style="height: 24px; width: 24px; border-radius: 50%; background: rgba(160,132,92,0.15); color: #A0845C; display: flex; align-items: center; justify-content: center; font-size: 14px;">✓</span>
+                      <span style="font-size: 14px; font-weight: 500;">No editing skills needed</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                      <span style="height: 24px; width: 24px; border-radius: 50%; background: rgba(160,132,92,0.15); color: #A0845C; display: flex; align-items: center; justify-content: center; font-size: 14px;">✓</span>
+                      <span style="font-size: 14px; font-weight: 500;">Works with zero followers</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                      <span style="height: 24px; width: 24px; border-radius: 50%; background: rgba(160,132,92,0.15); color: #A0845C; display: flex; align-items: center; justify-content: center; font-size: 14px;">✓</span>
+                      <span style="font-size: 14px; font-weight: 500;">Start earning this week</span>
+                    </div>
+                  </div>
+
+                  <!-- CTAs -->
+                  <div style="margin-top: 40px; display: flex; gap: 16px; flex-wrap: wrap;">
+                    <a
+                      href="https://nas.io/theonepercentbetterprogram/digital-files/the-1-better-program"
+                      target="_blank"
+                      rel="noreferrer"
+                      style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; border-radius: 9999px; padding: 14px 24px; font-size: 14px; font-weight: 600; text-decoration: none; background: linear-gradient(135deg, #A0845C 0%, #8A6F48 100%); color: #fff; box-shadow: 0 8px 24px rgba(160,132,92,0.3); transition: all 0.2s;"
+                    >
+                      Get the system — $9.90
+                    </a>
+                    <a
+                      href="https://nas.io/theonepercentbetterprogram/sessions/ai-consultation"
+                      target="_blank"
+                      rel="noreferrer"
+                      style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; border-radius: 9999px; padding: 14px 24px; font-size: 14px; font-weight: 600; text-decoration: none; background: rgba(255,255,255,0.8); border: 1.5px solid rgba(160,132,92,0.4); color: #8A6F48; transition: all 0.2s;"
+                    >
+                      Book a free chat first
+                    </a>
+                  </div>
+
+                  <p style="margin-top: 20px; font-size: 14px; color: #5a5a5a;">
+                    Join 100 pioneers building AI-powered income streams together.
+                  </p>
+                </div>
+
+              </div>
             </div>
+          </div>
         </section>
         
         <!-- What People Are Doing Section -->
