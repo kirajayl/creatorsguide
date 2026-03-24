@@ -235,6 +235,17 @@ section:first-of-type .text-center p {
     margin-right: auto;
 }
 
+/* All sections - center text in text-center containers */
+section .text-center {
+    text-align: center !important;
+}
+
+section .text-center p {
+    text-align: center !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Subheader paragraph - smaller font */
 section:first-of-type .text-center p:first-of-type {
     font-size: 1.125rem;
