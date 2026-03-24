@@ -402,6 +402,12 @@ footer .flex.flex-wrap.items-center.gap-x-6.gap-y-2 {
     gap: 0.5rem;
 }
 
+footer .flex.flex-wrap.items-center.gap-x-6.gap-y-2 a {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+}
+
 /* Flexbox Utilities */
 .flex {
     display: flex;
