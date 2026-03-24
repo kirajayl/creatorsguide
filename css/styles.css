@@ -382,19 +382,17 @@ footer {
     margin-top: auto;
 }
 
-footer .flex.flex-col.gap-8.md\:flex-row.md\:items-center.md\:justify-between {
+footer .flex.items-center.gap-3 {
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    align-items: center;
+    gap: 0.75rem;
 }
 
-@media (min-width: 768px) {
-    footer .flex.flex-col.gap-8.md\:flex-row.md\:items-center.md\:justify-between {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        gap: 1rem;
-    }
+footer img.h-10.w-10 {
+    height: 2.5rem;
+    width: 2.5rem;
+    max-height: 2.5rem;
+    max-width: 2.5rem;
 }
 
 footer .flex.flex-wrap.items-center.gap-x-6.gap-y-2 {
@@ -402,12 +400,6 @@ footer .flex.flex-wrap.items-center.gap-x-6.gap-y-2 {
     flex-wrap: wrap;
     align-items: center;
     gap: 0.5rem;
-}
-
-footer .flex.items-center.gap-3 {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
 }
 
 /* Flexbox Utilities */
