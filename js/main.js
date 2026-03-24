@@ -32,18 +32,15 @@ document.addEventListener('DOMContentLoaded', function() {
     faqButtons.forEach(button => {
         button.addEventListener('click', function() {
             const card = this.closest('.card');
-            const answer = card.querySelector('div.px-5');
             const symbol = this.querySelector('span:last-child');
             
             // Toggle active state
             card.classList.toggle('active');
             
-            // Toggle answer visibility
+            // Toggle symbol
             if (card.classList.contains('active')) {
-                answer.classList.remove('hidden');
                 symbol.textContent = '−';
             } else {
-                answer.classList.add('hidden');
                 symbol.textContent = '+';
             }
         });

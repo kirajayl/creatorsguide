@@ -14,6 +14,25 @@
     display: none !important;
 }
 
+/* FAQ Answer Styles */
+.faq-answer {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.625;
+    color: #5a5a5a;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-bottom: 0;
+}
+
+.card.active .faq-answer {
+    max-height: 200px;
+    padding-bottom: 1.25rem;
+}
+
 html {
     line-height: 1.5;
     -webkit-text-size-adjust: 100%;
