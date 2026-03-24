@@ -453,51 +453,96 @@
         </section>
         
         <!-- Why This Works Section -->
-        <section class="py-16 sm:py-24 bg-[#F5F0EB]">
-            <div class="container-pad">
-                <div class="max-w-4xl mx-auto">
-                    <div class="grid gap-10 lg:grid-cols-2 lg:gap-16 items-center">
-                        <div class="text-center lg:text-left">
-                            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-tight" style="font-family: 'Playfair Display', serif">
-                                Why this works <span class="text-[#A0845C]">when most people get stuck</span>
-                            </h2>
-                            <p class="mt-6 text-[#5a5a5a] leading-relaxed">I didn't grow this because of luck, ads, or a big audience. It worked because I stopped guessing and followed a system built for real people.</p>
-                            <div class="mt-8 space-y-4">
-                                <div class="flex items-center gap-3 justify-center">
-                                    <span class="text-xl flex-shrink-0">✅</span>
-                                    <span class="text-lg">Built-in monetization system from day one</span>
-                                </div>
-                                <div class="flex items-center gap-3 justify-center">
-                                    <span class="text-xl flex-shrink-0">✅</span>
-                                    <span class="text-lg">Daily support so you're never stuck alone</span>
-                                </div>
-                                <div class="flex items-center gap-3 justify-center">
-                                    <span class="text-xl flex-shrink-0">✅</span>
-                                    <span class="text-lg">No filming</span>
-                                </div>
-                                <div class="flex items-center gap-3 justify-center">
-                                    <span class="text-xl flex-shrink-0">✅</span>
-                                    <span class="text-lg">No face required</span>
-                                </div>
-                                <div class="flex items-center gap-3 justify-center">
-                                    <span class="text-xl flex-shrink-0">✅</span>
-                                    <span class="text-lg">No complicated tech</span>
-                                </div>
-                                <div class="flex items-center gap-3 justify-center">
-                                    <span class="text-xl flex-shrink-0">✅</span>
-                                    <span class="text-lg">No guessing what to post</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex justify-center">
-                            <div class="card overflow-hidden rounded-[20px] shadow-lg border-4 border-white" style="max-width: 400px;">
-                                <img src="images/why-works.jpeg" alt="Confident AI clone — lifestyle pose" class="w-full h-auto object-cover">
-                                <div class="bg-[#A0845C] text-black text-center py-2 text-sm font-medium tracking-wide">🤖 Your AI Clone</div>
-                            </div>
-                        </div>
+        <style>
+          @media (max-width: 768px) {
+            .why-grid {
+              grid-template-columns: 1fr !important;
+              gap: 40px !important;
+            }
+            .why-grid > div:last-child {
+              order: -1;
+            }
+            .why-grid h2 {
+              font-size: 1.875rem !important;
+            }
+            .why-grid .benefit-text {
+              font-size: 16px !important;
+            }
+          }
+        </style>
+        <section style="padding: 64px 0 96px; background: #F5F0EB;">
+          <div style="max-width: 1280px; margin: 0 auto; padding: 0 20px; font-family: Inter, sans-serif;">
+            <div style="max-width: 896px; margin: 0 auto;">
+
+              <!-- Two Column Layout -->
+              <div class="why-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;">
+
+                <!-- Left — Content -->
+                <div>
+                  <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 700; letter-spacing: -0.02em; color: #1a1a1a; margin: 0; line-height: 1.15;">
+                    Why this works
+                    <span style="color: #A0845C;"> when most people get stuck</span>
+                  </h2>
+
+                  <p style="margin-top: 24px; color: #5a5a5a; line-height: 1.7; font-size: 16px;">
+                    I didn't grow this because of luck, ads, or a big audience. It worked because I stopped guessing and followed a system built for real people.
+                  </p>
+
+                  <!-- Benefits List -->
+                  <div style="margin-top: 32px; display: flex; flex-direction: column; gap: 16px;">
+
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                      <span style="height: 8px; width: 8px; border-radius: 50%; background: #A0845C; flex-shrink: 0;"></span>
+                      <span class="benefit-text" style="font-weight: 700; font-size: 18px;">Built-in monetization system from day one</span>
                     </div>
+
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                      <span style="height: 8px; width: 8px; border-radius: 50%; background: #A0845C; flex-shrink: 0;"></span>
+                      <span class="benefit-text" style="font-weight: 700; font-size: 18px;">Daily support so you're never stuck alone</span>
+                    </div>
+
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                      <span style="height: 8px; width: 8px; border-radius: 50%; background: #A0845C; flex-shrink: 0;"></span>
+                      <span class="benefit-text" style="font-weight: 700; font-size: 18px;">No filming</span>
+                    </div>
+
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                      <span style="height: 8px; width: 8px; border-radius: 50%; background: #A0845C; flex-shrink: 0;"></span>
+                      <span class="benefit-text" style="font-weight: 700; font-size: 18px;">No face required</span>
+                    </div>
+
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                      <span style="height: 8px; width: 8px; border-radius: 50%; background: #A0845C; flex-shrink: 0;"></span>
+                      <span class="benefit-text" style="font-weight: 700; font-size: 18px;">No complicated tech</span>
+                    </div>
+
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                      <span style="height: 8px; width: 8px; border-radius: 50%; background: #A0845C; flex-shrink: 0;"></span>
+                      <span class="benefit-text" style="font-weight: 700; font-size: 18px;">No guessing what to post</span>
+                    </div>
+
+                  </div>
                 </div>
+
+                <!-- Right — Clone Image -->
+                <div style="display: flex; justify-content: center;">
+                  <div style="width: 100%; max-width: 384px; overflow: hidden; border-radius: 20px; box-shadow: 0 8px 32px rgba(0,0,0,0.12);">
+                    <img
+                      src="images/why-works.jpeg"
+                      alt="Confident AI clone — lifestyle pose"
+                      style="width: 100%; height: auto; object-fit: cover; display: block;"
+                    />
+                    <!-- Bottom label bar -->
+                    <div style="background: #A0845C; color: #fff; text-align: center; padding: 8px 0; font-size: 14px; font-weight: 500; letter-spacing: 0.05em;">
+                      🤖 Your AI Clone
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
             </div>
+          </div>
         </section>
         
         <!-- What's Inside Section -->
