@@ -29,19 +29,34 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // FAQ Toggle Functionality
     const faqButtons = document.querySelectorAll('#faq button');
+    const faqCards = document.querySelectorAll('#faq .card');
+    
     faqButtons.forEach(button => {
         button.addEventListener('click', function() {
             const card = this.closest('.card');
             const symbol = this.querySelector('span:last-child');
             
-            // Toggle active state
-            card.classList.toggle('active');
+            // Check if this card is already active
+            const isAlreadyActive = card.classList.contains('active');
             
-            // Toggle symbol
-            if (card.classList.contains('active')) {
-                symbol.textContent = '−';
-            } else {
+            // Close all other FAQ items
+            faqCards.forEach(otherCard => {
+                if (otherCard !== card) {
+                    otherCard.classList.remove('active');
+                    const otherSymbol = otherCard.querySelector('span:last-child');
+                    if (otherSymbol) {
+                        otherSymbol.textContent = '+';
+                    }
+                }
+            });
+            
+            // Toggle current card
+            if (isAlreadyActive) {
+                card.classList.remove('active');
                 symbol.textContent = '+';
+            } else {
+                card.classList.add('active');
+                symbol.textContent = '−';
             }
         });
     });

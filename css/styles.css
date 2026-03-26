@@ -125,6 +125,92 @@ a {
     }
 }
 
+/* Center align all section content */
+section {
+    text-align: center;
+}
+
+/* Center all container content */
+.container-pad {
+    text-align: center;
+}
+
+/* Center grid layouts - override default grid */
+section .grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 1.25rem !important;
+    justify-content: center !important;
+    align-items: stretch !important;
+    max-width: 1024px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Exclude features grid and cards from 3-column override */
+.features-grid {
+    grid-template-columns: repeat(1, 1fr) !important;
+    gap: 2rem !important;
+    justify-content: stretch !important;
+    max-width: none !important;
+}
+
+@media (min-width: 1024px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 3rem !important;
+    }
+}
+
+.features-cards {
+    grid-template-columns: repeat(1, 1fr) !important;
+    gap: 1rem !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+@media (min-width: 640px) {
+    .features-cards {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+/* Responsive: 2 columns on smaller screens */
+@media (max-width: 1024px) {
+    section .grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+/* Responsive: 1 column on mobile */
+@media (max-width: 640px) {
+    section .grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* Center cards and direct children */
+.container-pad > div {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* FAQ specific centering */
+#faq .max-w-3xl,
+#faq .container-pad > div {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Tier table centering */
+section .grid[style*="gap: 32px"],
+section .grid[style*="gap: 20px"] {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* Cards */
 .card {
     background: var(--card);

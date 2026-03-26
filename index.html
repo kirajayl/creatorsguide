@@ -28,7 +28,7 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" sizes="16x16">
     
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/styles.css?v=2">
+    <link rel="stylesheet" href="css/styles.css?v=5">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -156,6 +156,54 @@
                 </div>
 
               </div>
+            </div>
+          </div>
+        </section>
+        
+        <!-- Pioneer Spots Section -->
+        <section style="padding: 48px 0; background: linear-gradient(to bottom, #F5F0EB, #EDE7E0, #F5F0EB);">
+          <div style="max-width: 1280px; margin: 0 auto; padding: 0 20px; font-family: Inter, sans-serif;">
+            <div style="max-width: 768px; margin: 0 auto; text-align: center;">
+              <div style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 9999px; background: rgba(160,132,92,0.1); border: 2px solid #A0845C; margin-bottom: 16px;">
+                <span style="font-size: 20px;">🔥</span>
+                <span style="font-size: 16px; font-weight: 700; color: #A0845C; text-transform: uppercase; letter-spacing: 0.05em;">52/100 Pioneer Spots Claimed</span>
+              </div>
+              <p style="font-size: 18px; color: #5a5a5a; line-height: 1.6; margin: 0;">
+                The first 100 pioneers get in at <span style="color: #1a1a1a; font-weight: 700;">$9.90</span>. Once all spots are filled, the price goes up — permanently.
+              </p>
+            </div>
+          </div>
+        </section>
+        
+        <!-- Deadline Section -->
+        <section style="padding: 40px 0; background: linear-gradient(to bottom, #F5F0EB, #EDE7E0, #F5F0EB);">
+          <div style="max-width: 1280px; margin: 0 auto; padding: 0 20px; font-family: Inter, sans-serif;">
+            <div style="max-width: 768px; margin: 0 auto; text-align: center;">
+              <div style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 9999px; background: rgba(160,132,92,0.15); border: 2px solid #A0845C; margin-bottom: 16px;">
+                <span style="font-size: 20px;">⏰</span>
+                <span style="font-size: 16px; font-weight: 700; color: #A0845C; text-transform: uppercase; letter-spacing: 0.05em;">Founding Cohort Enrollment Closes</span>
+              </div>
+              <div style="font-size: 32px; font-weight: 700; color: #1a1a1a; margin: 16px 0;">
+                April 30, 2026
+              </div>
+              <p style="font-size: 16px; color: #5a5a5a; line-height: 1.6; margin: 0;">
+                After this date, enrollment reopens at standard pricing.
+              </p>
+            </div>
+          </div>
+        </section>
+        
+        <!-- Guarantee Section -->
+        <section style="padding: 48px 0; background: linear-gradient(to bottom, #F5F0EB, #EDE7E0, #F5F0EB);">
+          <div style="max-width: 1280px; margin: 0 auto; padding: 0 20px; font-family: Inter, sans-serif;">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+              <div style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 9999px; background: rgba(160,132,92,0.15); border: 2px solid #A0845C; margin-bottom: 20px;">
+                <span style="font-size: 20px;">🛡️</span>
+                <span style="font-size: 16px; font-weight: 700; color: #A0845C; text-transform: uppercase; letter-spacing: 0.05em;">72-Hour Deployment Guarantee</span>
+              </div>
+              <p style="font-size: 18px; color: #5a5a5a; line-height: 1.7; margin: 0;">
+                Complete the 7-Day Challenge in 72 hours and your AI clone will be live, creating content, and driving traffic. If you don't have your clone deployed in 3 days, we'll work with you 1-on-1 until it's done.
+              </p>
             </div>
           </div>
         </section>
@@ -402,7 +450,7 @@
         </section>
         
         <!-- What We'll Build Section -->
-        <section class="py-16 sm:py-24 bg-white">
+        <section class="py-16 sm:py-24 bg-white" id="what-we-build">
             <div class="container-pad">
                 <div class="max-w-4xl mx-auto">
                     <div class="text-center mb-10">
@@ -411,39 +459,44 @@
                         </h2>
                         <p style="margin-top: 16px; font-size: 18px; color: #5a5a5a; line-height: 1.7; max-width: 2xl; margin-left: auto; margin-right: auto; text-align: center;">No fancy equipment. No massive following. Just a phone, 60 minutes, and a system that works.</p>
                     </div>
-                    <div class="grid gap-8 lg:grid-cols-2 lg:gap-12 items-stretch">
-                        <div class="flex justify-center">
-                            <div class="w-full max-w-sm rounded-2xl overflow-hidden shadow-lg border border-black/5" style="min-height:520px">
-                                <iframe src="embed.html" class="w-full h-full" style="min-height:520px;border:none" allowfullscreen scrolling="no" title="Instagram Reel — The 1% Better Program"></iframe>
-                            </div>
-                        </div>
-                        <div class="flex flex-col gap-4 justify-between" style="min-height:520px">
-                            <div class="card p-6 flex items-center gap-5 flex-1">
-                                <div class="text-4xl flex-shrink-0">📱</div>
-                                <div>
-                                    <div class="font-bold">Content from your phone</div>
-                                    <p class="text-sm text-[#5a5a5a] leading-relaxed mt-1">Simple reels that attract the right people</p>
+                    <div style="display: block; width: 100%;">
+                        <!-- Desktop: 2 columns, Mobile: 1 column -->
+                        <div style="display: flex; flex-direction: row; gap: 2rem; align-items: center;" id="features-layout">
+                            <!-- Left: Instagram Embed -->
+                            <div style="flex: 0 0 400px; display: flex; justify-content: center;">
+                                <div style="width: 100%; max-width: 400px; border-radius: 24px; overflow: hidden; box-shadow: 0 18px 40px rgba(42,36,30,0.10); border: 1px solid rgba(0,0,0,0.05);">
+                                    <iframe src="embed.html" style="width: 100%; height: 700px; border: none;" allowfullscreen scrolling="no" title="Instagram Reel — The 1% Better Program"></iframe>
                                 </div>
                             </div>
-                            <div class="card p-6 flex items-center gap-5 flex-1">
-                                <div class="text-4xl flex-shrink-0">🤖</div>
-                                <div>
-                                    <div class="font-bold">A.I. does the heavy lifting</div>
-                                    <p class="text-sm text-[#5a5a5a] leading-relaxed mt-1">Captions, ideas, automation — let tech help you</p>
+                            <!-- Right: 4 Cards in 1 Column -->
+                            <div style="flex: 1; display: flex; flex-direction: column; gap: 1rem;">
+                                <div class="card p-6 flex items-center gap-5">
+                                    <div class="text-4xl flex-shrink-0">📱</div>
+                                    <div>
+                                        <div class="font-bold">Content from your phone</div>
+                                        <p class="text-sm text-[#5a5a5a] leading-relaxed mt-1">Simple reels that attract the right people</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="card p-6 flex items-center gap-5 flex-1">
-                                <div class="text-4xl flex-shrink-0">💬</div>
-                                <div>
-                                    <div class="font-bold">Conversations that convert</div>
-                                    <p class="text-sm text-[#5a5a5a] leading-relaxed mt-1">DMs that turn followers into customers</p>
+                                <div class="card p-6 flex items-center gap-5">
+                                    <div class="text-4xl flex-shrink-0">🤖</div>
+                                    <div>
+                                        <div class="font-bold">A.I. does the heavy lifting</div>
+                                        <p class="text-sm text-[#5a5a5a] leading-relaxed mt-1">Captions, ideas, automation — let tech help you</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="card p-6 flex items-center gap-5 flex-1">
-                                <div class="text-4xl flex-shrink-0">💰</div>
-                                <div>
-                                    <div class="font-bold">Digital income streams</div>
-                                    <p class="text-sm text-[#5a5a5a] leading-relaxed mt-1">Multiple ways to monetize what you create</p>
+                                <div class="card p-6 flex items-center gap-5">
+                                    <div class="text-4xl flex-shrink-0">💬</div>
+                                    <div>
+                                        <div class="font-bold">Conversations that convert</div>
+                                        <p class="text-sm text-[#5a5a5a] leading-relaxed mt-1">DMs that turn followers into customers</p>
+                                    </div>
+                                </div>
+                                <div class="card p-6 flex items-center gap-5">
+                                    <div class="text-4xl flex-shrink-0">💰</div>
+                                    <div>
+                                        <div class="font-bold">Digital income streams</div>
+                                        <p class="text-sm text-[#5a5a5a] leading-relaxed mt-1">Multiple ways to monetize what you create</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -451,6 +504,22 @@
                 </div>
             </div>
         </section>
+        
+        <style>
+          @media (min-width: 768px) {
+            #features-layout {
+              grid-template-columns: 1fr 1fr !important;
+            }
+            #features-layout > div:last-child {
+              grid-template-columns: 1fr 1fr !important;
+            }
+          }
+          @media (max-width: 767px) {
+            #features-layout > div:last-child {
+              grid-template-columns: 1fr 1fr !important;
+            }
+          }
+        </style>
         
         <!-- Why This Works Section -->
         <style>
@@ -587,6 +656,170 @@
                     </div>
                 </div>
             </div>
+        </section>
+        
+        <!-- Tier Table Section -->
+        <section style="padding: 64px 0 96px; background: #F5F0EB;">
+          <div style="max-width: 1280px; margin: 0 auto; padding: 0 20px; font-family: Inter, sans-serif;">
+            <div style="max-width: 896px; margin: 0 auto; text-align: center; margin-bottom: 56px;">
+              <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 700; letter-spacing: -0.02em; color: #1a1a1a; margin: 0; line-height: 1.2;">
+                Choose Your <span style="color: #A0845C;">Path</span>
+              </h2>
+            </div>
+
+            <!-- 3 Tier Cards -->
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; max-width: 1200px; margin: 0 auto;">
+
+              <!-- BLUEPRINT Tier -->
+              <div style="background: #ffffff; border: 2px solid rgba(160,132,92,0.3); border-radius: 24px; padding: 40px; box-shadow: 0 4px 20px rgba(0,0,0,0.06);">
+                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+                  <span style="font-size: 32px;">📘</span>
+                  <div style="text-align: left;">
+                    <div style="font-weight: 700; font-size: 24px; color: #1a1a1a;">BLUEPRINT</div>
+                    <div style="font-size: 14px; color: #5a5a5a;">Perfect for first-time creators</div>
+                  </div>
+                </div>
+                <div style="font-size: 36px; font-weight: 700; color: #A0845C; margin-bottom: 8px;">$9.90 <span style="font-size: 16px; font-weight: 500; color: #5a5a5a;">USD</span></div>
+                <p style="font-size: 14px; color: #5a5a5a; margin-bottom: 24px;">One-time payment. No subscriptions.</p>
+                
+                <!-- Features -->
+                <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px;">
+                  <div style="display: flex; align-items: center; gap: 10px;">
+                    <span style="color: #A0845C; font-weight: 700;">✓</span>
+                    <span style="font-size: 15px; color: #1a1a1a;">AI Clone Setup Guide</span>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 10px;">
+                    <span style="color: #A0845C; font-weight: 700;">✓</span>
+                    <span style="font-size: 15px; color: #1a1a1a;">Content Formula System</span>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 10px;">
+                    <span style="color: #A0845C; font-weight: 700;">✓</span>
+                    <span style="font-size: 15px; color: #1a1a1a;">DM-to-Sale Scripts</span>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 10px;">
+                    <span style="color: #A0845C; font-weight: 700;">✓</span>
+                    <span style="font-size: 15px; color: #1a1a1a;">Monetization Playbook</span>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 10px;">
+                    <span style="color: #A0845C; font-weight: 700;">✓</span>
+                    <span style="font-size: 15px; color: #1a1a1a;">7-Day Kickstart Plan</span>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 10px;">
+                    <span style="color: #A0845C; font-weight: 700;">✓</span>
+                    <span style="font-size: 15px; color: #1a1a1a;">Community Access</span>
+                  </div>
+                </div>
+                
+                <a href="https://nas.io/theonepercentbetterprogram/digital-files/the-1-better-program" target="_blank" rel="noreferrer" style="display: block; text-align: center; border-radius: 9999px; padding: 16px 24px; font-size: 15px; font-weight: 600; text-decoration: none; background: linear-gradient(135deg, #A0845C 0%, #8A6F48 100%); color: #fff; box-shadow: 0 6px 20px rgba(160,132,92,0.25); transition: all 0.2s;">
+                  Start Your Challenge
+                </a>
+              </div>
+
+              <!-- DFY Tier (MOST POPULAR) -->
+              <div style="position: relative; background: #ffffff; border: 3px solid #A0845C; border-radius: 24px; padding: 40px; box-shadow: 0 8px 32px rgba(160,132,92,0.2);">
+                <!-- MOST POPULAR Badge -->
+                <div style="position: absolute; top: -14px; left: 50%; transform: translateX(-50%); display: inline-flex; align-items: center; gap: 8px; padding: 8px 20px; border-radius: 9999px; background: #A0845C; color: #fff; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; white-space: nowrap;">
+                  ⭐ Most Popular
+                </div>
+                
+                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+                  <span style="font-size: 32px;">📗</span>
+                  <div style="text-align: left;">
+                    <div style="font-weight: 700; font-size: 24px; color: #1a1a1a;">DONE-FOR-YOU</div>
+                    <div style="font-size: 14px; color: #5a5a5a;">For busy moms who want hands-off setup</div>
+                  </div>
+                </div>
+                <div style="font-size: 36px; font-weight: 700; color: #A0845C; margin-bottom: 8px;">$999 <span style="font-size: 16px; font-weight: 500; color: #5a5a5a;">USD</span></div>
+                <p style="font-size: 14px; color: #5a5a5a; margin-bottom: 24px;">One-time payment. Lifetime access.</p>
+                
+                <!-- Features -->
+                <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px;">
+                  <div style="display: flex; align-items: center; gap: 10px;">
+                    <span style="color: #A0845C; font-weight: 700;">✓</span>
+                    <span style="font-size: 15px; color: #1a1a1a;">Everything in Blueprint</span>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 10px;">
+                    <span style="color: #A0845C; font-weight: 700;">✓</span>
+                    <span style="font-size: 15px; color: #1a1a1a;">1-on-1 Deployment Support</span>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 10px;">
+                    <span style="color: #A0845C; font-weight: 700;">✓</span>
+                    <span style="font-size: 15px; color: #1a1a1a;">Custom AI Clone Build</span>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 10px;">
+                    <span style="color: #A0845C; font-weight: 700;">✓</span>
+                    <span style="font-size: 15px; color: #1a1a1a;">Content Calendar (30 days)</span>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 10px;">
+                    <span style="color: #A0845C; font-weight: 700;">✓</span>
+                    <span style="font-size: 15px; color: #1a1a1a;">Priority Community Access</span>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 10px;">
+                    <span style="color: #A0845C; font-weight: 700;">✓</span>
+                    <span style="font-size: 15px; color: #1a1a1a;">Weekly Coaching Calls</span>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 10px;">
+                    <span style="color: #A0845C; font-weight: 700;">✓</span>
+                    <span style="font-size: 15px; color: #1a1a1a;">Done-For-You Funnel Setup</span>
+                  </div>
+                </div>
+                
+                <a href="http://tiny.cc/creatorsbizguide" target="_blank" rel="noreferrer" style="display: block; text-align: center; border-radius: 9999px; padding: 16px 24px; font-size: 15px; font-weight: 600; text-decoration: none; background: linear-gradient(135deg, #A0845C 0%, #8A6F48 100%); color: #fff; box-shadow: 0 6px 20px rgba(160,132,92,0.25); transition: all 0.2s;">
+                  Get DFY Support
+                </a>
+              </div>
+
+              <!-- EMPIRE Tier -->
+              <div style="background: #ffffff; border: 2px solid rgba(160,132,92,0.3); border-radius: 24px; padding: 40px; box-shadow: 0 4px 20px rgba(0,0,0,0.06);">
+                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+                  <span style="font-size: 32px;">📙</span>
+                  <div style="text-align: left;">
+                    <div style="font-weight: 700; font-size: 24px; color: #1a1a1a;">EMPIRE</div>
+                    <div style="font-size: 14px; color: #5a5a5a;">For established creators & agency builders</div>
+                  </div>
+                </div>
+                <div style="font-size: 36px; font-weight: 700; color: #A0845C; margin-bottom: 8px;">$4,999 <span style="font-size: 16px; font-weight: 500; color: #5a5a5a;">USD</span></div>
+                <p style="font-size: 14px; color: #5a5a5a; margin-bottom: 24px;">One-time payment. White-glove service.</p>
+                
+                <!-- Features -->
+                <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px;">
+                  <div style="display: flex; align-items: center; gap: 10px;">
+                    <span style="color: #A0845C; font-weight: 700;">✓</span>
+                    <span style="font-size: 15px; color: #1a1a1a;">Everything in DFY</span>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 10px;">
+                    <span style="color: #A0845C; font-weight: 700;">✓</span>
+                    <span style="font-size: 15px; color: #1a1a1a;">Full Agency Build (131 Agents)</span>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 10px;">
+                    <span style="color: #A0845C; font-weight: 700;">✓</span>
+                    <span style="font-size: 15px; color: #1a1a1a;">Custom Brand Identity</span>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 10px;">
+                    <span style="color: #A0845C; font-weight: 700;">✓</span>
+                    <span style="font-size: 15px; color: #1a1a1a;">Sales Funnel + Email Sequences</span>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 10px;">
+                    <span style="color: #A0845C; font-weight: 700;">✓</span>
+                    <span style="font-size: 15px; color: #1a1a1a;">60-Day 1-on-1 Mentorship</span>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 10px;">
+                    <span style="color: #A0845C; font-weight: 700;">✓</span>
+                    <span style="font-size: 15px; color: #1a1a1a;">Private Strategy Sessions</span>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 10px;">
+                    <span style="color: #A0845C; font-weight: 700;">✓</span>
+                    <span style="font-size: 15px; color: #1a1a1a;">Revenue Share Opportunities</span>
+                  </div>
+                </div>
+                
+                <a href="http://tiny.cc/creatorsempireguide" target="_blank" rel="noreferrer" style="display: block; text-align: center; border-radius: 9999px; padding: 16px 24px; font-size: 15px; font-weight: 600; text-decoration: none; background: linear-gradient(135deg, #A0845C 0%, #8A6F48 100%); color: #fff; box-shadow: 0 6px 20px rgba(160,132,92,0.25); transition: all 0.2s;">
+                  Build Your Empire
+                </a>
+              </div>
+
+            </div>
+          </div>
         </section>
         
         <!-- Pricing Section -->
@@ -788,52 +1021,87 @@
         <!-- FAQ Section -->
         <section id="faq" class="py-16 sm:py-24 bg-[#F5F0EB]">
             <div class="container-pad">
-                <div class="flex items-center justify-center min-h-[60vh]">
-                    <div class="max-w-2xl mx-auto w-full">
-                        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-center" style="font-family: 'Playfair Display', serif">Questions?</h2>
-                        <p class="mt-4 text-lg text-[#5a5a5a] text-center">Everything you need to know about building your AI clone and starting your digital income stream.</p>
-                        <div class="mt-10 space-y-4">
-                            <div class="card overflow-hidden">
-                                <button class="w-full flex items-center justify-between p-5 text-left">
-                                    <span class="font-semibold pr-4">What is an AI clone?</span>
-                                    <span class="text-[#A0845C] text-xl flex-shrink-0">+</span>
-                                </button>
-                                <div class="faq-answer">
-                                    <p class="text-[#5a5a5a] leading-relaxed">An AI clone is a digital version of yourself that thinks, writes, and creates like you. It learns from your voice, your stories, and your expertise — then helps you scale your content without burning out.</p>
-                                </div>
-                            </div>
-                            <div class="card overflow-hidden">
-                                <button class="w-full flex items-center justify-between p-5 text-left">
-                                    <span class="font-semibold pr-4">Do I need tech skills to build one?</span>
-                                    <span class="text-[#A0845C] text-xl flex-shrink-0">+</span>
-                                </button>
-                                <div class="faq-answer">
-                                    <p class="text-[#5a5a5a] leading-relaxed">Not at all. This program walks you through everything step-by-step. If you can copy, paste, and follow simple instructions, you can build your AI clone in under an hour.</p>
-                                </div>
-                            </div>
-                            <div class="card overflow-hidden">
-                                <button class="w-full flex items-center justify-between p-5 text-left">
-                                    <span class="font-semibold pr-4">Will this work if I have zero followers?</span>
-                                    <span class="text-[#A0845C] text-xl flex-shrink-0">+</span>
-                                </button>
-                                <div class="faq-answer">
-                                    <p class="text-[#5a5a5a] leading-relaxed">Absolutely. Your AI clone helps you create consistent, high-quality content that attracts followers organically. Plus, you'll learn how to monetize from day one — even with a small audience.</p>
-                                </div>
-                            </div>
-                            <div class="card overflow-hidden">
-                                <button class="w-full flex items-center justify-between p-5 text-left">
-                                    <span class="font-semibold pr-4">Is this a get-rich-quick scheme?</span>
-                                    <span class="text-[#A0845C] text-xl flex-shrink-0">+</span>
-                                </button>
-                                <div class="faq-answer">
-                                    <p class="text-[#5a5a5a] leading-relaxed">No. This is a real skill-building program. You'll learn how to build AI clones, create digital products, and build sustainable income streams. It takes work, but the 1% compound effect makes it worth it.</p>
-                                </div>
+                <div class="max-w-3xl mx-auto">
+                    <div class="text-center mb-10">
+                        <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 700; letter-spacing: -0.02em; color: #1a1a1a; margin: 0; line-height: 1.2;">
+                            Questions?
+                        </h2>
+                        <p style="margin-top: 16px; font-size: 18px; color: #5a5a5a; line-height: 1.7;">Everything you need to know about building your AI clone and starting your digital income stream.</p>
+                    </div>
+                    
+                    <!-- FAQ Items -->
+                    <div class="mt-10 space-y-4">
+                        <!-- Q1 -->
+                        <div class="card overflow-hidden">
+                            <button class="w-full flex items-center justify-between p-5 text-left">
+                                <span class="font-semibold pr-4">I'm a single mom with no tech skills. Can I do this?</span>
+                                <span class="text-[#A0845C] text-xl flex-shrink-0">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p class="text-[#5a5a5a] leading-relaxed">Yes. The 7-Day Challenge is designed for beginners. You get 7 AI coaches guiding you daily. If you can send a WhatsApp message, you can deploy agents. Most moms complete lessons during nap time or after kids' bedtime.</p>
                             </div>
                         </div>
-                        <div class="mt-12 text-center">
-                            <a href="http://tiny.cc/creatorsguide" target="_blank" rel="noreferrer" class="btn btn-primary">Get the system — $9.90</a>
-                            <p class="mt-4 text-sm text-[#5a5a5a]">Build your AI clone. Start your digital income stream.</p>
+                        
+                        <!-- Q2 -->
+                        <div class="card overflow-hidden">
+                            <button class="w-full flex items-center justify-between p-5 text-left">
+                                <span class="font-semibold pr-4">How much time do I actually need per day?</span>
+                                <span class="text-[#A0845C] text-xl flex-shrink-0">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p class="text-[#5a5a5a] leading-relaxed">15-30 minutes. The system runs on autopilot after your 72-hour setup. You work during quiet hours. The agents handle traffic, follow-ups, and conversions. You focus on creation and family.</p>
+                            </div>
                         </div>
+                        
+                        <!-- Q3 -->
+                        <div class="card overflow-hidden">
+                            <button class="w-full flex items-center justify-between p-5 text-left">
+                                <span class="font-semibold pr-4">What if I can't afford the $999 DFY upgrade?</span>
+                                <span class="text-[#A0845C] text-xl flex-shrink-0">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p class="text-[#5a5a5a] leading-relaxed">Start with the $9.90 Blueprint. Many creators scale from there. The front-end alone can generate your first commissions. Upgrade when you're ready. The system is designed to help you earn first, then invest.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Q4 -->
+                        <div class="card overflow-hidden">
+                            <button class="w-full flex items-center justify-between p-5 text-left">
+                                <span class="font-semibold pr-4">Is this MLM or a real business?</span>
+                                <span class="text-[#A0845C] text-xl flex-shrink-0">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p class="text-[#5a5a5a] leading-relaxed">This is affiliate marketing with AI automation. You're promoting a real product (7-Day Challenge) with real tools (131 agents). No recruitment, no inventory, no cold calling. You earn commissions from actual sales.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Q5 -->
+                        <div class="card overflow-hidden">
+                            <button class="w-full flex items-center justify-between p-5 text-left">
+                                <span class="font-semibold pr-4">What support do I get if I get stuck?</span>
+                                <span class="text-[#A0845C] text-xl flex-shrink-0">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p class="text-[#5a5a5a] leading-relaxed">Daily AI coaching + community access. Gary's team also provides deployment support for DFY ($999) and Empire ($4,999) tiers. You're never figuring this out alone.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Q6 -->
+                        <div class="card overflow-hidden">
+                            <button class="w-full flex items-center justify-between p-5 text-left">
+                                <span class="font-semibold pr-4">Can I really do this from home with kids around?</span>
+                                <span class="text-[#A0845C] text-xl flex-shrink-0">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p class="text-[#5a5a5a] leading-relaxed">Yes. That's the point. Work during quiet hours. The agents handle traffic, follow-ups, and conversions. You focus on creation and family. No filming, no face required, no complicated tech.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- CTA -->
+                    <div class="mt-12 text-center">
+                        <a href="http://tiny.cc/creatorsguide" target="_blank" rel="noreferrer" class="btn btn-primary">Get the system — $9.90</a>
+                        <p class="mt-4 text-sm text-[#5a5a5a]">Build your AI clone. Start your digital income stream.</p>
                     </div>
                 </div>
             </div>
@@ -865,6 +1133,6 @@
     </footer>
     
     <!-- JavaScript -->
-    <script src="js/main.js"></script>
+    <script src="js/main.js?v=2"></script>
 </body>
 </html>
